@@ -1,0 +1,20 @@
+# Ujian Cari Pokemon
+
+import cgi
+form = cgi.FieldStorage()
+searchterm =  form.getvalue('searchbox')
+
+from flask import Flask, render_template, abort, make_response, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def welcome():
+    return render_template('welcome_pokemon.html')
+
+@app.route('/search')
+def searchbox():
+    return 
+
+if __name__=='__main__':
+    app.run(debug = True)
