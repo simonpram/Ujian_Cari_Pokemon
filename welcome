@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Search</title>
+<style>
+
+body {
+    background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/24/103364-Mewtwo-Pok%C3%A9mon-white_background-simple-748x468.jpg") ;
+    background-repeat: no-repeat;
+}
+
+</style>
+
+</head>
+
+<body>
+    <center>
+    <h1>Welcome to Pokemon World!</h1>
+    <form name="Type Pokemon you looking for" action="/cgi-bin/Ujian_Cari_Pokemon.py" method="get">
+        <span style="background-color: #ff0000">Type Pokemon you looking for:</span>
+        <input type="text" name="searchbox">
+        <input type="submit" value="Search!">
+        </form>
+    </center>
+</body>
+</html>
